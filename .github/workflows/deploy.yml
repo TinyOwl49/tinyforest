@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: 'https://tinyowl49.github.io/tinyforest/'
+          BASE_PATH: 'https://tinyowl49.github.io/tinyforest'
         run: |
           npm run build
           touch build/.nojekyll
