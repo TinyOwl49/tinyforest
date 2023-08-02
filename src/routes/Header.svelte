@@ -1,8 +1,12 @@
+<script lang="ts">
+	import { base } from "$app/paths";
+</script>
+
 <header>
-	<h1 class="title"><a href="/">Tiny Forest</a></h1>
+	<h1 class="title"><a href="{base}/">Tiny Forest</a></h1>
 	<nav class="link-list">
-		<a class="link" href="/">Home</a>
-		<a class="link" href="/about">About</a>
+		<a class="link" href="{base}/">Home</a>
+		<a class="link" href="{base}/about">About</a>
 	</nav>
 </header>
 
@@ -12,7 +16,7 @@
 	}
 
 	h1.title {
-		margin: 5px; 
+		margin: 5px;
 		color: #1e90ff;
 		text-transform: uppercase;
 		font-size: 2.4em;
