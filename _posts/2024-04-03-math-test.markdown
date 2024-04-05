@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "数学機能 テスト"
+date:   2024-04-03 23:34:07 +0900
+categories: math
+use_math: true
+---
+
+$$
+1+2+\cdots+n=\frac{1}{2} n(n+1)
+$$

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<main>
+	<h1>{{ page.title }}</h1>
+	<p>公開日: {{ page.date | date: "%Y年 %m月%d日" }}</p>
+	<div class="post-content">
+		<article class="post-container">
+			{% if page.desc %}
+			<h2>{{ page.desc }}</h2>
+			{% endif %}
+
+			<div>
+				{{ content }}
+			</div>
+		</article>
+		<div class="post-info post-container">
+			<h4>目次</h4>
+			<div id="toc"></div>
+			<hr size="0.2px" />
+
+			<h4>カテゴリー</h4>
+			{% for category in page.categories %}
+			<a href="/categories">{{ category }}</a>
+			{% endfor %}
+		</div>
+
+	</div>
+</main>

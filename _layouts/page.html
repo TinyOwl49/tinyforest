@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<main>
+	<div>
+		{% if page.desc %}
+		<h2>{{ page.desc }}</h2>
+		{% endif %}
+
+		<div>
+			{{ content }}
+		</div>
+	</div>
+</main>
