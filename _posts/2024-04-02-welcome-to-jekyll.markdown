@@ -8,7 +8,7 @@ categories: jekyll update
 # はじめに
 以前から自作ブログを作ってみたい！と思っていたのですが、お金がない+クラウド超初心者ということで、どうにか無料で簡単に自作ブログが作れないかと考えていました。  
 そんな中、Github Pages + Jekyllを使うことで無料で自作ブログが作れる！という話を聞き、このサイトを作った所存です。  
-## Jekyllって何?
+# Jekyllって何?
 [Jekyll][jekyll-docs]とは、Rubyで作られている静的サイトジェネレーター(SSG)です。ブログサイト制作に特化しており、そのための様々な機能が提供されています。
 ## クイックスタート
 参考: [ドキュメント][jekyll-docs]
@@ -55,9 +55,10 @@ JekyllはマークダウンにLiquidという言語を使用していて、鉤�
 [Liquid / Jekyll](https://jekyllrb-ja.github.io/docs/liquid/)  
 [変数 / Jekyll](https://jekyllrb-ja.github.io/docs/variables/)
 
-# Github Pagesへ
+## Github Pagesへ
 Githubにソースコードをあげて設定をすることで、作成したサイトを無料で公開することができます。  
-詳しくは以下を参考にしてください。
+詳しくは以下を参考にしてください。  
+[Jekyll を使用して GitHub Pages サイトを作成する](https://docs.github.com/ja/enterprise-cloud@latest/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
 
 # 見た目をカスタマイズしよう
 初期設定だけでも十分いい感じですが、レイアウトを色々カスタマイズすることで完全オリジナルのブログサイトを作ることができます。
