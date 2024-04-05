@@ -55,6 +55,10 @@ JekyllはマークダウンにLiquidという言語を使用していて、鉤�
 [Liquid / Jekyll](https://jekyllrb-ja.github.io/docs/liquid/)  
 [変数 / Jekyll](https://jekyllrb-ja.github.io/docs/variables/)
 
+# Github Pagesへ
+Githubにソースコードをあげて設定をすることで、作成したサイトを無料で公開することができます。  
+詳しくは以下を参考にしてください。
+
 # 見た目をカスタマイズしよう
 初期設定だけでも十分いい感じですが、レイアウトを色々カスタマイズすることで完全オリジナルのブログサイトを作ることができます。
 
