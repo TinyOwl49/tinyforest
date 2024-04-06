@@ -6,7 +6,7 @@ code {
 	color: #ccc
 }
 
-pre > code {
+pre.highlight > code {
 	overflow-x: scroll;
 	background-color: var(--code-background-color, "#202020");
 	font-size: var(--code-font-size, 14.5px);

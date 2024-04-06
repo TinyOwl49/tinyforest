@@ -4,15 +4,13 @@ title: カテゴリ一覧
 permalink: /categories/
 ---
 
-<div id="archives">
+<div>
 	{% for category in site.categories %}
-	<div class="archive-group">
+	<div>
 		{% capture category_name %}{{ category | first }}{% endcapture %}
-		<h3 class="category-head"><a name="{{ category_name }}">{{ category_name | capitalize }}</a></h3>
+		<h3><a name="{{ category_name }}">{{ category_name | capitalize }}</a></h3>
 		{% for post in site.categories[category_name] %}
-		<article class="archive-item">
-			<h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-		</article>
+		{% include _post_preview.html post=post truncate=50  %}
 		{% endfor %}
 	</div>
 	{% endfor %}

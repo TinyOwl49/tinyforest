@@ -1,0 +1,12 @@
+<aside>
+	<a href="{{ site.baseurl }}/{{ post.url }}">
+		<h3>{{ post.title }}</h3>
+		<p class="post-date">公開日: {{ include.post.date | date: "%Y年 %m月%d日" }}</p>
+		<p class="post-preview">
+			{% if include.post.desc %}
+				{{ include.post.desc }}
+			{% else %}
+				{{ include.post.content | strip_html |truncate: 130 }}
+		</p>
+	</a>
+</aside>

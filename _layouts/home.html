@@ -9,15 +9,7 @@ layout: default
 		</header>
 
 		{% for post in site.posts %}
-		<aside>
-			<a href="{{ site.baseurl }}/{{ post.url }}">
-				<h3>{{ post.title }}</h3>
-				<p class="post-date">公開日: {{ post.date | date: "%Y年 %m月%d日" }}</p>
-				<p class="post-preview">{% if post.desc %}{{ post.desc }}{% else %}{{ post.content | strip_html | truncate:
-					130 }}{%
-					endif %}</p>
-			</a>
-		</aside>
+		{% include _post_preview.html post=post %}
 		{% endfor %}
 	</section>
 </main>

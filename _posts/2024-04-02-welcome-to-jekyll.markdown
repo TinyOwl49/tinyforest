@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyllでブログ作ってみた！"
 date:   2024-04-03 23:34:07 +0900
-categories: jekyll update
+categories: jekyll
 ---
 
 # はじめに
@@ -40,7 +40,7 @@ categories: jekyll update
 ---
 ```
 
-あとはマークダウンで記事を書いて実行するだけです！ 
+あとはお好みの記事を書いていくだけです！
 
 ## Liquidや変数について 
 {% raw %}
@@ -199,6 +199,33 @@ layout: default
 ```
 {% endraw %}
 
+### _includesフォルダ
+何回も使うものやヘッダーやフッターなどは、`_includes`フォルダに置いておくと便利です。  
+下記のように書くことでどこらでも埋め込むことができます。  
+{% raw %}
+```html
+{% include _ファイル名.html %}
+```
+{% endraw %}  
+
+**_header.html**
+{% raw %}
+```html
+<header>
+	<h1><a href="{{ site.baseurl }}/">My blog</a></h1>
+	<nav>
+		<a href="{{ site.baseurl }}/">Home</a>
+		<a href="{{ site.baseurl }}/about">About</a>
+	</nav>
+</header>
+```
+{% endraw %}
+
+**_footer.html**
+```html
+<footer></footer>
+```
+
 ### cssやjs
 cssやjsのファイルは`assets/css`や`assets/js`に置いた後、default.htmlでそれらのファイルを読み込めばOKです。  
 {% raw %}
@@ -212,11 +239,26 @@ cssやjsのファイルは`assets/css`や`assets/js`に置いた後、default.ht
 _sass内のファイルは@importする際に相対パス等を考慮する必要がないようです。  
 (`_sass/layout.scss`を作成したら、`@import 'layout'`だけで読み込めます！)
 
+## その他の設定
+このサイトを作る上で利用させていただいたライブラリや記事を上げておきます。
+
+[**highlight.js**](https://highlightjs.org/)  
+コードに色をつけてくれるライブラリです。
+
+[**mathjax**](https://www.mathjax.org/)  
+数式(Latex)を使えるようにするライブラリです。
+
+[**ブログの目次を表示したい！JavaScriptのみで簡単にできる目次の作り方**](https://codesapuri.com/articles/how-to-display-a-table-of-contents-in-a-blog-post)  
+右側にある目次は、このサイトを参考にさせていただきました。
+
+[**Jekyllサイトにシンプルなタグ・カテゴリのリストを実装**](https://qiita.com/mnishiguchi/items/fa1e8fd2e893ea801ce8)
+カテゴリー機能を実装する際に参考にさせていただきました。
+
 # 感想
-以前Djangoで練習用ブログを作った際には結構苦労したので、こんなに簡単に無料の自作ブログを作れることに驚きました。  
+以前Djangoでブログを作った際には結構苦労したので、こんなに簡単に無料の自作ブログを作れることに驚きました。  
 SSGなのでコメント機能などを実装することは難しいですが、工夫したらできそうな気もするのでいつかやってみたいです。  
 
-今後はこのサイトを使って、興味のある数学やプログラミングのことを記事にできたらいいなと思っています。  
+せっかく作ったので、今後このサイトを使って興味のある数学やプログラミングのことを記事にできたらいいなと思っています。  
 皆さんもぜひJekyllで自作ブログを作ってみてください！
 
 

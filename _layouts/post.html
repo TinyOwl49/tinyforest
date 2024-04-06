@@ -22,7 +22,7 @@ layout: default
 
 			<h4>カテゴリー</h4>
 			{% for category in page.categories %}
-			<a href="/categories">{{ category }}</a>
+			<a href="{{ site.baseurl }}/categories#{{ category }}">{{ category }}</a>
 			{% endfor %}
 		</div>
 
