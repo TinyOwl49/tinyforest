@@ -7,6 +7,7 @@
 				{{ include.post.desc }}
 			{% else %}
 				{{ include.post.content | strip_html |truncate: 130 }}
+			{% endif %}
 		</p>
 	</a>
 </aside>
